@@ -1,0 +1,8 @@
+<button class="btn btn-primary"  (click)="display()">Display details</button>
+<p *ngIf="isDisplayPasswd">NSA password : Trump</p>
+<ul style="list-style-type:circle">
+  <li *ngFor="let clickLog of buttonClickHistory; let i = index"
+       [ngClass]="{highlight:i > 4}">      
+    {{clickLog}}
+  </li>  
+</ul>
