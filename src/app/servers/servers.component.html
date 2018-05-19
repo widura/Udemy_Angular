@@ -9,4 +9,6 @@ class = "form-control"
        (input)="onUpdateServerName($event)"/>-->
 
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
-<p>{{serverName}} {{serverStatusInfo}}</p> 
+<!-- <p *ngIf="isServerAdded()">{{serverName}} {{serverStatusInfo}}</p> *ngIf directive-->
+<p *ngIf="isServerAdded()">server was created, server name is :{{serverName}}}</p>
+<app-server *ngFor(let server )></app-server>
