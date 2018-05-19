@@ -13,7 +13,7 @@ export class ServersComponent implements OnInit {
 
   serverStatusInfo = "Server is not running";
 
-  server = ['Server', 'Server 2'];
+  servers = ['Server', 'Server 2'];
 
   constructor() {
     setTimeout(() => {
@@ -25,7 +25,7 @@ export class ServersComponent implements OnInit {
   onCreateServer() {
     if (this.serverName.length > 0) {
       this.serverStatusInfo = "Server is up and running";
-      this.server.push(this.serverName)
+      this.servers.push(this.serverName)
       this.serverAdded = true;
     }
   }
