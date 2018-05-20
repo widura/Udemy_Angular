@@ -9,6 +9,13 @@ import { SuccessAlert } from './success-alert/success-alert.component';
 import { FormsModule} from '@angular/forms';
 import { UserComponentComponent } from './user-component/user-component.component';
 import { DetailsComponent } from './details/details.component';
+import { HeaderComponent } from './header/header.component';
+import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
+import { RecipeDetailComponent } from './recipe-list/recipe-detail/recipe-detail.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.component';
+import { ShoppingListEditComponent } from './shopping/shopping-list-edit/shopping-list-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { DetailsComponent } from './details/details.component';
     WarningAlertComponent,
     SuccessAlert,
     UserComponentComponent,
-    DetailsComponent
+    DetailsComponent,
+    HeaderComponent,
+    RecipeListComponent,
+    RecipeItemComponent,
+    RecipeDetailComponent,
+    ShoppingComponent,
+    ShoppingListComponent,
+    ShoppingListEditComponent    
   ],
   imports: [
     BrowserModule,
