@@ -10,12 +10,13 @@ import { FormsModule} from '@angular/forms';
 import { UserComponentComponent } from './user-component/user-component.component';
 import { DetailsComponent } from './details/details.component';
 import { HeaderComponent } from './header/header.component';
-import { RecipeListComponent } from './recipe-list/recipe-list.component';
-import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
-import { RecipeDetailComponent } from './recipe-list/recipe-detail/recipe-detail.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { ShoppingListComponent } from './shopping/shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping/shopping-list-edit/shopping-list-edit.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeListComponent} from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent} from './recipes/recipe-detail/recipe-detail.component';
+import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,13 @@ import { ShoppingListEditComponent } from './shopping/shopping-list-edit/shoppin
     UserComponentComponent,
     DetailsComponent,
     HeaderComponent,
-    RecipeListComponent,
-    RecipeItemComponent,
-    RecipeDetailComponent,
     ShoppingComponent,
     ShoppingListComponent,
-    ShoppingListEditComponent    
+    ShoppingListEditComponent,
+    RecipesComponent,
+    RecipeListComponent,
+    RecipeDetailComponent,
+    RecipeItemComponent
   ],
   imports: [
     BrowserModule,
